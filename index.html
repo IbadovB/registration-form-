@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Registration Form | Codinglab</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Registration</div>
+        <form action="#" id="regisForm">
+            <div class="user-details">
+
+                <div class="input-box">
+                    <span class="details">Full name</span>
+                    <input id="fullName" type="text" placeholder="Enter your name">
+                        <p class="form-alert">Full name can't be empty</p>
+                </div>
+                <!-- ========== -->
+                <div class="input-box">
+                    <span class="details">Username</span>
+                    <input id="userName" type="text" placeholder="Enter your username">                    
+                        <p class="form-alert">Username can't be empty</p>
+                </div>
+
+                <!-- =========== -->
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input id="email" type="email" placeholder="Enter your email"/>
+                    <p class="form-alert">Please enter a valid email address</p>
+                </div>
+                <!-- =========== -->
+                <div class="input-box">
+                    <span class="details">Phone Number</span>         
+                    <input id="phoneNumber" type="number" placeholder="Enter your phone number">
+                        <p class="form-alert">Phone number can't be empty</p>
+                </div>
+                <!-- =========== -->
+                <div class="input-box">
+                    <span class="details">Password name</span>
+                    <input id="passwordName" type="password" placeholder="Enter your password">
+                        <p class="form-alert">Password can't be empty</p>
+                </div>
+
+                <!-- =========== -->
+                <div class="input-box">
+                    <span class="details">Confirm Password</span>
+                    <input type="password" id="confirmPassword" placeholder="Confirm your password">
+                     
+                        <p class="form-alert">Confirm password can't be empty</p>
+                </div>
+            </div>
+
+            <div class="gender-details">
+                <!-- <input type="radio" name="gender" id="dot-1"> 
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">-->
+                <span class="gender-title">Gender</span>
+                <div class="category">
+
+                    <label for="dot-1">
+                        <input type="radio" name="gender-type" id="dot-1" class="dot one"> 
+                        <!-- <span class="dot one"></span> -->
+                        <span class="gender">Male</span>
+                       
+                    </label>
+
+                    <label for="dot-2">
+                        <input type="radio" name="gender-type" id="dot-2" class="dot two">
+                        <!-- <span class="dot two"></span> -->
+                        <span class="gender">Female</span>
+                    </label>
+
+                    <label for="dot-3">
+                        <input type="radio" name="gender-type" id="dot-3" class="dot three">
+                        <!-- <span class="dot three"></span> -->
+                        <span class="gender">Prefer not to say</span>
+                    </label>
+                  
+                </div>
+                <p class="form-alert">Please select a gender type</p>
+            </div>
+
+
+            <div class="button">
+                <input type="submit"  id="submit-btn" class="submit-btn" value="Register"> 
+                
+            </div>
+
+        </form>
+
+        <div class="userInfo">
+            <h2>User detail</h2>
+
+            <h3>Full name: <span id="loginFullname"></span></h3>
+            <h3>Username: <span id="loginUsername"></span></h3>
+            <h3>Email: <span id="loginEmail"></span></h3>
+            <h3>Phone Number: <span id="loginPhonenumber"></span></h3>
+            <h3>Password name: <span id="passwordName"></span></h3>
+            <h3>Confirm Password: <span id="confirmPassword"></span></h3>
+        </div>
+
+            </div>
+            <div id="success-message" class="success-message">
+                Registreted succesfully
+            </div>
+
+   
+
+    <script src="main.js"></script>
+</body>
+
+</html>
